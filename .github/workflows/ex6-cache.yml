@@ -16,7 +16,7 @@ jobs:
 
         - uses: actions/cache@v3
           with:
-            path: ~/node_modules
+            path: node_modules
             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
             restore-keys: |
               ${{ runner.os }}-node-
@@ -25,6 +25,8 @@ jobs:
           shell: bash
           run: |
             npm install
+            ls -la 
+            ls -la node_modules
 
   run-npm-test:
     needs: run-npm-install
