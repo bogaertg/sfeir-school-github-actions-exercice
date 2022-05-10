@@ -6,7 +6,7 @@ jobs:
   run-npm-install:
     strategy:
       matrix:
-        version: [14, 16, lts/*]
+        version: [14, lts/*]
         os: [ubuntu-latest, ubuntu-18.04]
         include:
           - os: ubuntu-latest-latest
