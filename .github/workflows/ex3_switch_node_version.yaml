@@ -1,4 +1,4 @@
-name: interact with Github API
+name: Switch Node version
 on: 
   pull_request:
 
