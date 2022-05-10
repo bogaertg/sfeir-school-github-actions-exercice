@@ -8,10 +8,10 @@ jobs:
     steps:
       - id: short_sha
         run: |
-          echo "::set-output name=sha_short::${{GITHUB_SHA::7}}"
+          echo "::set-output name=sha_short::${GITHUB_SHA::7}"
       # - id: short_sha
       #   run: |
-      #     echo "GITHUB_SHA=${{github.sha::7}}" >> $GITHUB_ENV 
+      #     echo "GITHUB_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV 
             # USE {{env.GITHUB_SHA}} in next step
 
       - name: Create issue using REST API
