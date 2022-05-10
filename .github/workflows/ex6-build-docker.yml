@@ -73,5 +73,5 @@ jobs:
         - name: checkout
           uses: actions/checkout@v2
         - run: |
-            docker build -t ${{ github-sha }} .
+            docker build -t ${{ github.sha }} .
 
