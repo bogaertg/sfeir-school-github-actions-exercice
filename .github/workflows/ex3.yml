@@ -5,9 +5,8 @@ on:
 jobs:
   run-npm-test:
     runs-on: ubuntu-latest
-    steps:
-        - name : test app
+    steps:        
+        - uses: ./.github/workflows/ex3-reusable.yml #local
           #uses: {owner}/{repo}/.github/workflows/{myreusable-workflow.yaml}@main #remote
-          uses: ./.github/workflows/ex3-reusable.yml #local
           with:
             node-version: 14
