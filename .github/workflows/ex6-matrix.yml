@@ -9,7 +9,7 @@ jobs:
         version: [14, lts/*]
         os: [ubuntu-latest, ubuntu-18.04]
         include:
-          - os: ubuntu-latest-latest
+          - os: ubuntu-latest
             version: 12
 
     runs-on: ${{ matrix.os }}
